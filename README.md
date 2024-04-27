@@ -4,7 +4,7 @@ callpipe lets you chain functions linearly in JavaScript without syntax transfor
 
 ## Methods
 
-To invoke a method of an arity, pass the function as the first argument to `call` (the internal name of the closure returned by `pipe`) and the rest of the parameters.
+To invoke a method of any arity, pass the function as the first argument to `call` (the internal name of the closure returned by `pipe`) and the rest of the parameters.
 
 ```js
 import { pipe } from 'callpipe';
