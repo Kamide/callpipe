@@ -1,0 +1,20 @@
+{
+	"name": "callpipe",
+	"version": "0.0.0",
+	"description": "Linear function chaining for JavaScript",
+	"keywords": [
+		"call",
+		"pipe"
+	],
+	"license": "MIT",
+	"author": "Kangming Deng",
+	"type": "module",
+	"main": "./callpipe.js",
+	"types": "./callpipe.d.ts",
+	"scripts": {
+		"start": "node ./callpipe.js",
+		"start:watch": "node --watch ./callpipe.js",
+		"test": "node --test ./callpipe.test.js",
+		"test:watch": "node --test --watch ./callpipe.test.js"
+	}
+}
