@@ -6,6 +6,10 @@
 		"call",
 		"pipe"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Kamide/callpipe.git"
+	},
 	"license": "MIT",
 	"author": "Kangming Deng",
 	"type": "module",
