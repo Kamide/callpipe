@@ -4,7 +4,7 @@ callpipe lets you chain functions linearly in JavaScript without syntax transfor
 
 ## Methods
 
-To invoke a method of any arity, pass the function as the first argument to `call` (the internal name of the closure returned by `pipe`) and the rest of the parameters.
+To invoke a method of any arity, pass the function as the first argument to `call` (the internal name of the closure returned by `pipe`) and the rest of the parameters. To extract the result, call it without any parameters.
 
 ```js
 import { pipe } from 'callpipe';
@@ -127,6 +127,7 @@ console.assert(
 	pipe
 		(3)
 		(-1, add, 1, 2)
+		()
 	=== 6
 );
 
@@ -134,6 +135,7 @@ console.assert(
 	pipe
 		(3)
 		($, add, 1, 2, $)
+		()
 	=== 6
 );
 
@@ -157,6 +159,7 @@ console.assert(
 	pipe
 		(2)
 		(1, add, 1, 3)
+		()
 	=== 6
 );
 
@@ -164,6 +167,7 @@ console.assert(
 	pipe
 		(2)
 		($, add, 1, $, 3)
+		()
 	=== 6
 );
 
